@@ -1,0 +1,18 @@
+.container
+    .row
+        .col-md-8.col-sm-10.col-xs-12.col-lg-offset-0
+            .box
+                h1.title.red= contact.title
+
+                each item in contact.items
+                    .row
+                        .col-xs-12.profile-card
+                            .profile-card-header
+                                .col-xs-4.col-md-3.profile-card-image
+                                    img.img-responsive.img-circle(src="images/team/"+item.photo width=100)
+
+                                .col-xs-8.col-md-9.profile-card-info
+                                    .name= item.name
+                                    .ageny= item.position
+                                    .ageny= item.phone
+                                    .agency= item.email

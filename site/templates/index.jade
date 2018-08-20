@@ -1,0 +1,100 @@
+doctype html
+html(lang="en")
+    head
+        title="Digitas"
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        link(rel="shorcut icon", type="image/x-icon", href="images/favicon.ico")
+        link(rel="icon", type="image/png", sizes="32x32", href="images/favicon-32x32.png")
+        link(rel="icon", type="image/png", sizes="16x16", href="images/favicon-16x16.png")
+        link(href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css', rel='stylesheet')
+        link(href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap-theme.min.css', rel='stylesheet')
+        link(href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css', rel='stylesheet')
+        link(href='css/styles.css?v'+timestamp, rel='stylesheet')
+        include ../includes/_ga_code.html
+    body
+
+        .color-bar
+            .color-box
+            .color-box
+            .color-box
+            .color-box
+            .color-box
+            .color-box
+
+        .nav-background.animated.slideOutUp
+        nav.navbar.navbar-inverse.navbar-fixed-top#navbar-container
+            .container
+                .navbar-header.pull-right
+                    button.navbar-toggle.collapsed(type="button" data-toggle="collapse" data-target="#navbar" aria-expanded=false)
+                        span.sr-only Toggle navigtaion
+                        each iconbar in [1, 2, 3]
+                            span.icon-bar
+
+                    a.navbar-brand(href="#welcome")
+                        img#changing-logo(src="images/welcome.png" alt="Digitas" width="80px")
+
+                .collapse.navbar-collapse#navbar
+                    ul.nav.navbar-nav
+                        li.li-welcome
+                            a.highlight(href="#welcome") Welcome
+                                span.current-line.animated.zoomIn
+
+                        li.li-team
+                            a(href="#team") Our Team
+
+                        li.li-clients
+                            a(href="#clients") Clients
+
+                        li.li-work
+                            a(href="#work") Our Work
+
+                        li.li-rfp
+                            a(href="#proposal") Proposal
+
+                        li.li-contact
+                            a(href="#contact") Contact
+
+        .login
+            include sections/_login
+
+        section.sections
+            section.section.welcome.animated#welcome(data-section-name="welcome")
+                .inner
+                    include sections/_welcome
+                .clearfix
+
+            section.section.team#team(data-section-name="team")
+                .inner
+                    include sections/_team
+                .clearfix
+
+            section.section.clients(data-section-name="clients")
+                .inner
+                    include sections/_clients
+                .clearfix
+
+            section.section.work#work(data-section-name="work")
+                .inner
+                    include sections/_work
+                .clearfix
+
+            section.section.proposal#proposal(data-section-name="proposal")
+                .inner
+                    include sections/_proposal
+                .clearfix
+
+            section.section.contact#contact(data-section-name="contact")
+                .inner
+                    include sections/_contact
+                .clearfix
+
+            //section.section.digitas(data-section-name="digitas")
+                //img(src="images/digitas.png", width="128")
+
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.2/mobile-detect.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.min.js")
+    script(src="js/script.js?"+timestamp)

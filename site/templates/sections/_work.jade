@@ -1,0 +1,21 @@
+.container
+    .row
+        .col-md-8.col-sm-10.col-xs-12.col-lg-offset-0
+            .box
+                h1.title.yellow= work.title
+
+                each item in work.items
+                    .row.work-card
+                        .col-xs-12.work-card-left
+                            .embed-responsive.embed-responsive-16by9
+                                iframe.embed-responsive-item(src=item.video width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen)
+
+                        .col-xs-12.work-card-right
+                            .title=item.title
+                            //.lead Global media efficiencies across multiple markets
+
+                            .desc= item.desc
+
+                            // .desc-sub DISAPPEARING OFF SOCIAL CHANNELS CREATES SOCIAL BUZZ
+
+                            // a(href) View full case study
