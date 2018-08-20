@@ -413,6 +413,15 @@ body {
       }
     }
 
+    &.team {
+      .box {
+        padding: 20px;
+        h1 {
+          margin-bottom: 0;
+        }
+      }
+    }
+
     &.clients {
       background-color: #333;
       background-size: cover;
