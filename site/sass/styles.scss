@@ -33,6 +33,12 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'CenturyGothic';
+  src: url('../fonts/CenturyGothic/CenturyGothic.tff');
+  font-weight: normaal;
+}
+
 .clearfix:after {
   visibility: hidden;
   display: block;
@@ -91,7 +97,7 @@ textarea {
 body {
   background: white;
   color: black;
-  font-family: 'AudiTypeScreen-Normal', sans-serif;
+  font-family: 'CenturyGothic', sans-serif;
   font-size: 14px;
   overflow-x: hidden;
 
@@ -124,8 +130,9 @@ body {
   }
 
   h1.title {
-    font-family: 'AudiType-ExtendedBold', sans-serif;
-    font-size: 18px;
+    font-family: 'CenturyGothic', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
     margin: 0;
     display: inline-block;
     margin-bottom: 50px;
@@ -195,6 +202,8 @@ body {
       }
       a {
         color: black;
+        font-family: 'CenturyGothic';
+        font-weight: bold;
       }
       &:nth-child(1) {
         a {
@@ -407,41 +416,79 @@ body {
     &.welcome {
       background: white;
       background-size: cover;
-
-      .signature {
-        float: right;
+      .howdy {
+        font-weight: semi-bold;
+        margin-bottom: 0;
       }
     }
 
     &.team {
       .box {
+        width: 70%;
         padding: 20px;
         h1 {
-          margin-bottom: 0;
+          display: block;
+          margin-bottom: 20px;
+          width: 100%;
+        }
+        img {
+          vertical-align: top;
+        }
+        p {
+          display: inline-block;
+          font-size: 16px;
+          margin: 7px 0 0 20px;
         }
       }
     }
 
     &.clients {
-      background-color: #333;
+      background-color: #FFF;
       background-size: cover;
-
+      .container {
+        width: 100%;
+      }
       .box {
         background: none;
         padding: 0;
         margin-bottom: 100px;
-
         h1.title {
           padding: 50px;
         }
       }
-
       .logos {
         margin: 0 auto;
         .logo {
           height: 150px;
           img {
             @include vertical-align();
+            margin: auto;
+            max-width: 70%;
+            @media screen and (min-width: 480px) {
+              max-width: 50%;
+            }
+            @media screen and (min-width: 768px) {
+              max-width: 45%;
+            }
+            @media screen and (min-width: 1200px) {
+              max-width: 55%;
+            }
+            @media screen and (min-width: 1200px) {
+              max-width: 50%;
+            }
+          }
+          &:nth-child(6),
+          &:nth-child(10),
+          &:nth-child(12),
+          &:nth-child(15),
+          &:nth-child(17),
+          &:nth-child(18),
+          &:nth-child(20),
+          &:nth-child(23),
+          &:nth-child(24) {
+            img {
+              max-width: 70%;
+            }
           }
         }
       }
@@ -450,10 +497,25 @@ body {
     &.work {
       background-attachment: fixed;
       background-color: #333333;
-      background-image: url("../images/bg-4-ourwork-1080p.jpg");
+      background-image: url("../images/doughnuts-bg.png");
       background-repeat: no-repeat;
       background-position: top center;
       background-size: cover;
+
+      .dunkin {
+        font: italic bold 42px 'Georgia', serif !important;
+        color: #ffd10b;
+      }
+
+      .subtitle {
+        margin-bottom: 30px;
+      }
+
+      a{
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: bold;
+      }
     }
 
     &.proposal {
@@ -487,7 +549,7 @@ body {
     }
 
     &.contact {
-      background-color: white;
+      background-color: #333;
     }
 
     &.digitas {
@@ -522,9 +584,8 @@ body {
           .profile-card-info {
             .name {
               color: #ad1c23;
-              font-family: 'AudiTypeScreen-Bold', sans-serif;
-              font-size: 32px;
-              font-style: italic;
+              font: italic bold 32px 'Georgia', serif;
+              margin-bottom: 8px;
             }
 
             .agency {
@@ -564,10 +625,10 @@ body {
           a {
             background: #FFFFFF;
             color: #000000;
-            font-family: 'AudiTypeScreen-Normal', sans-serif;
+            font-family: 'CenturyGothic', sans-serif;
             font-size: 16px;
             float: left;
-            padding: 15px 80px 15px 15px;
+            padding: 15px 80px 15px 0px;
             position: relative;
 
             &::after {
@@ -625,6 +686,8 @@ body {
 
 h1.brand-title {
   color: #FF39E5;
+  font: italic bold 42px 'Georgia', serif;
+  margin-top: 10px;
 }
 
 .navbar-brand {

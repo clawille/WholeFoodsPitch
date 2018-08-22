@@ -89,15 +89,8 @@
             }
         });
 
+        // Apply boostrap offset for client section
+        $('.clients .logo.col-lg-2:nth-child(5n+1)').addClass('col-lg-offset-1');
+
     });
 })(jQuery);
-
-
-
-
-
-
-
-
-
-

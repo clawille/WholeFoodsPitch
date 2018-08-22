@@ -1,19 +1,19 @@
 {
-  "title": "Contact",
+  "title": "CONTACT",
   "items": [
     {
-      "name": "Robert Guay",
+      "name": "Alyse Schwartz",
       "position": "Relationship Lead",
-      "phone": "781 588 2226",
-      "email": "robert.guay@digitas.com",
-      "photo": "Robert_Guay.jpeg"
+      "phone": "404-788-3361",
+      "email": "Alyse.Schwartz@digitas.com",
+      "photo": "alyse_schwartz.svg"
     },
     {
-      "name": "Linda Piggot",
-      "position": "Business Development",
-      "phone": "646 250 2251",
-      "email": "linda.piggot@digitas.com",
-      "photo": "Linda_Piggot.jpg"
+      "name": "Andrew Carlson",
+      "position": "Experience Design Lead",
+      "phone": "646-241-5445",
+      "email": "Andrew.Carlson@digitas.com",
+      "photo": "andrew_carlson.svg"
     }
   ]
 }
