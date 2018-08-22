@@ -36,7 +36,13 @@
 @font-face {
   font-family: 'CenturyGothic';
   src: url('../fonts/CenturyGothic/CenturyGothic.ttf');
-  font-weight: normaal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'CenturyGothicBold';
+  src: url('../fonts/CenturyGothicBold/CenturyGothicBold.ttf');
+  font-weight: bold;
 }
 
 .clearfix:after {
@@ -428,9 +434,22 @@ body {
       background: white;
       background-size: cover;
       .howdy {
-        font-weight: semi-bold;
         margin-bottom: 0;
       }
+      p {
+        display: block;
+      }
+      .bold {
+        font-family: 'CenturyGothicBold';
+      }
+      .inline {
+        display: inline;
+        margin-left: 5px;
+        &:nth-child(odd) {
+          margin: 0;
+        }
+      }
+
     }
 
     &.team {
@@ -700,9 +719,6 @@ body {
     .inner {
       .container {
         margin-left: -6px;
-        .row {
-
-        }
       }
     }
   }

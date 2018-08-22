@@ -31,14 +31,12 @@ gulp.task('copy', function() {
 gulp.task('jade', function() {
     gulp.src(jadeSources)
         .pipe(data(function(file) {
-            var welcome = JSON.parse(fs.readFileSync('./site/data/welcome.json'));
             var team = JSON.parse(fs.readFileSync('./site/data/team.json'));
             var work = JSON.parse(fs.readFileSync('./site/data/work.json'));
             var contact = JSON.parse(fs.readFileSync('./site/data/contact.json'));
 
             return {
                 timestamp: + new Date(),
-                welcome: welcome,
                 team: team,
                 clients: {},
                 work: work,
