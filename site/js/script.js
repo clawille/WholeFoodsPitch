@@ -104,7 +104,18 @@
                 $(this).find('#volume-text').text('Volume Off');
                 $("video").prop('muted', true);
             }
-        })
+        });
+
+        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+            $(".nav.navbar-nav li").click(function(e) {
+                e.preventDefault();
+                var section = $(this).find("a").attr("href");
+                $("html, body").animate({
+                    scrollTop: $(section).offset().top + 150
+                });
+                $('#navbar').removeClass('in');
+            });
+        }
 
     });
 })(jQuery);
