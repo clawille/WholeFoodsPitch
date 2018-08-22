@@ -310,8 +310,15 @@ body {
         background-color: #333 !important;
       }
       &:hover {
+        background: transparent;
         .icon-bar {
           background-color: white !important;
+        }
+      }
+      &.collapsed {
+        background-color: white !important;
+        .icon-bar {
+          background-color: #333 !important;
         }
       }
     }
@@ -528,7 +535,7 @@ body {
 
       a {
         background: url("../images/download-icon.svg") no-repeat;
-        padding-left: 115px;
+        padding-left: 100px;
         padding-top: 10px;
         height: 90px;
         display: block;
@@ -546,9 +553,17 @@ body {
           top: 13px;
           width: 32px;
         }
-
-        span {
-
+        @media screen and (max-width: 479px) {
+          span {
+            &.text {
+              line-height: 35px;
+              display: inline-block;
+            }
+          }
+          &:after {
+            top: -40px;
+            right: -50px;
+          }
         }
       }
     }
