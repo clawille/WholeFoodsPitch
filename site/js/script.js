@@ -29,15 +29,15 @@
 
             var password = $('#password').val();
 
-            if (password === '') {
+            if (password === 'digitas') {
                 $.cookie("wfcookiepitch", 1, { expires : 1 });
 
                 $('body').css('overflow-y', 'scroll');
 
-                $('nav').find('li').find('a').find('span').addClass('animated zoomOut');
+                $('.nav').find('li').find('a').find('span').addClass('animated zoomOut');
 
                 $('nav').addClass('animated fadeInDown');
-                $('nav').find('li.li-welcome').find('a').find('span').removeClass('zoomOut').addClass('zoomIn');
+                $('.nav').find('li.li-welcome').find('a').find('span').removeClass('zoomOut').addClass('zoomIn');
 
                 $('.login').addClass('animated fadeOutUp');
                 $('.welcome').find('.box').addClass('animated fadeInUp delay-3s');
@@ -52,9 +52,9 @@
                             $current = $.scrollify.current();
                             $currentSectionName = $current.data('section-name');
 
-                            $('nav').find('li.li-' + $currentSectionName).find('a').find('span').removeClass('zoomOut').addClass('zoomIn');
+                            $('.nav').find('li.li-' + $currentSectionName).find('a').find('span').removeClass('zoomOut').addClass('zoomIn');
                             $('ul li a').removeClass('highlight');
-                            $('nav').find('li.li-' + $currentSectionName).find('a').addClass('highlight');
+                            $('.nav').find('li.li-' + $currentSectionName).find('a').addClass('highlight');
 
                             $('#changing-logo').attr('src','images/' + $currentSectionName + '.png');
                         },
@@ -65,10 +65,10 @@
             }
         });
 
-        $links = $('nav').find('a').on('click', function (e) {
+        $links = $('.nav').find('a').on('click', function (e) {
             e.preventDefault();
 
-            $('nav').find('li').find('span').addClass('animated zoomOut');
+            $('.nav').find('li').find('span').addClass('animated zoomOut');
             $(this).find('span').removeClass('zoomOut').addClass('zoomIn');
 
             $('ul li a').removeClass('highlight');

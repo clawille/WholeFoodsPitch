@@ -622,6 +622,9 @@ body {
           margin-bottom: 34px;
 
           .profile-card-image {
+            img {
+              width: auto;
+            }
           }
 
           .profile-card-info {
