@@ -35,7 +35,7 @@
 
 @font-face {
   font-family: 'CenturyGothic';
-  src: url('../fonts/CenturyGothic/CenturyGothic.tff');
+  src: url('../fonts/CenturyGothic/CenturyGothic.ttf');
   font-weight: normaal;
 }
 
@@ -362,6 +362,7 @@ body {
           border-bottom: 1px solid #979797;
           -webkit-transform:
           rotate(-70deg);
+          transform: rotate(-70deg);
           position: absolute;
           top: -20px;
           left: -121px;
@@ -382,6 +383,9 @@ body {
       .form {
         animation-delay: 2s;
         position: relative;
+        input::-ms-clear, input::-ms-reveal {
+          display: none;
+        }
 
         label {
           color: black;
