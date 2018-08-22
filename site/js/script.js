@@ -29,7 +29,7 @@
 
             var password = $('#password').val();
 
-            if (password === 'digitas') {
+            if (password === '') {
                 $.cookie("wfcookiepitch", 1, { expires : 1 });
 
                 $('body').css('overflow-y', 'scroll');
@@ -92,6 +92,19 @@
         // Apply boostrap offset for client section
         $('.clients .logo.col-lg-2:nth-child(5n+1)').addClass('col-lg-offset-1');
 
+        $('#team .box.small.mute-btn').on('click', function(){
+            $(this).toggleClass('muted');
+
+            if (!$(this).hasClass('muted')) {
+                $(this).find('#volume-icon').attr('src','images/unmute-icon.svg');
+                $(this).find('#volume-text').text('Volume On');
+                $("video").prop('muted', false);
+            } else {
+                $(this).find('#volume-icon').attr('src','images/mute-icon.svg');
+                $(this).find('#volume-text').text('Volume Off');
+                $("video").prop('muted', true);
+            }
+        })
+
     });
-    
 })(jQuery);

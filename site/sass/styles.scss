@@ -426,6 +426,11 @@ body {
       .box {
         width: 70%;
         padding: 20px;
+        &.mute-btn {
+          &:hover {
+            cursor: pointer;
+          }
+        }
         h1 {
           display: block;
           margin-bottom: 20px;
