@@ -449,7 +449,6 @@ body {
           margin: 0;
         }
       }
-
     }
 
     &.team {
@@ -546,10 +545,30 @@ body {
         margin-bottom: 30px;
       }
 
-      a{
+      h3 {
+        font-family: 'CenturyGothicBold';
+        text-decoration: underline;
+      }
+
+      .list {
+        p {
+          margin: 0;
+        }
+      }
+
+      .solution {
+        li {
+          margin-bottom: 15px;
+          span {
+            font-family: 'CenturyGothicBold';
+          }
+        }
+      }
+      
+
+      a {
         text-transform: uppercase;
         font-size: 16px;
-        font-weight: bold;
       }
     }
 
