@@ -136,7 +136,7 @@ body {
   }
 
   h1.title {
-    font-family: 'CenturyGothic', sans-serif;
+    font-family: 'CenturyGothicBold', sans-serif;
     font-size: 16px;
     font-weight: bold;
     margin: 0;
@@ -441,6 +441,7 @@ body {
       }
       .bold {
         font-family: 'CenturyGothicBold';
+        margin-bottom: 0;
       }
       .inline {
         display: inline;
@@ -584,6 +585,9 @@ body {
         background-color: #ef4924;
         border-radius: 45px;
         text-decoration: none;
+        @media screen and (min-width: 768px) {
+          width: 440px;
+        }
 
         &::after {
           content: "";
@@ -693,7 +697,7 @@ body {
             font-family: 'CenturyGothic', sans-serif;
             font-size: 16px;
             float: left;
-            padding: 15px 80px 15px 0px;
+            padding: 15px 60px 15px 0px;
             position: relative;
 
             &::after {
