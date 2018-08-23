@@ -431,9 +431,6 @@ body {
     }
 
     &.welcome {
-      z-index: 2;
-      background: white;
-      background-size: cover;
       .howdy {
         margin-bottom: 0;
       }
@@ -454,6 +451,7 @@ body {
     }
 
     &.team {
+      background-color: #FFF;
       .box {
         width: 70%;
         padding: 20px;
@@ -480,7 +478,6 @@ body {
 
     &.clients {
       background-color: #FFF;
-      background-size: cover;
       .container {
         width: 100%;
       }
@@ -780,16 +777,15 @@ h1.brand-title {
 }
 
 .fullscreen-bg {
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   overflow: hidden;
-  //z-index: -100;
   .vimeo-container {
     position: relative;
-    padding-bottom: 56.25%;
+    padding-bottom: 52.25%;
     overflow: hidden;
   }
   .vimeo-container iframe,
