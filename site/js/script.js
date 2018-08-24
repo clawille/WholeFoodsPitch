@@ -49,7 +49,7 @@
                         before: function (i, els) {
                             $('nav').find('li').find('a').find('span').removeClass('zoomIn').addClass('animated zoomOut');
 
-                            $current = $.scrollify.current();
+                            // $current = $.scrollify.current();
                             $currentSectionName = $current.data('section-name');
 
                             $('.nav').find('li.li-' + $currentSectionName).find('a').find('span').removeClass('zoomOut').addClass('zoomIn');
@@ -86,7 +86,7 @@
                 $.scrollify.move($section);
             } else {
                 $("html, body").animate({ scrollTop: $($section).offset().top }, 1100);
-            }
+            } 
         });
 
         // Apply boostrap offset for client section
