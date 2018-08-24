@@ -315,7 +315,8 @@ body {
       .icon-bar {
         background-color: #333 !important;
       }
-      &:hover {
+      &:hover,
+      &:focus {
         background: transparent;
         .icon-bar {
           background-color: white !important;
@@ -484,13 +485,14 @@ body {
       .box {
         background: none;
         padding: 0;
-        margin-bottom: 100px;
+        margin-bottom: 0px;
         h1.title {
           padding: 50px;
         }
       }
       .logos {
         margin: 0 auto;
+        padding-bottom: 150px;
         .logo {
           height: 150px;
           img {
@@ -536,7 +538,7 @@ body {
       background-size: cover;
 
       .dunkin {
-        font: italic bold 42px 'Georgia', serif !important;
+        font: italic bold 30px 'Georgia', serif !important;
         color: #ffd10b;
       }
 
@@ -791,14 +793,12 @@ h1.brand-title {
 
 .fullscreen-bg {
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  top: 55px;
+  right: 10px;
+  bottom: 0px;
+  left: 10px;
   overflow: hidden;
   .vimeo-container {
-    position: relative;
-    padding-bottom: 52.25%;
     overflow: hidden;
   }
   .vimeo-container iframe,

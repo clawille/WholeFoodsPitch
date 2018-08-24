@@ -29,7 +29,7 @@
 
             var password = $('#password').val();
 
-            if (password === 'digitas') {
+            if (password === '') {
                 $.cookie("wfcookiepitch", 1, { expires : 1 });
 
                 $('body').css('overflow-y', 'scroll');
@@ -49,7 +49,7 @@
                         before: function (i, els) {
                             $('nav').find('li').find('a').find('span').removeClass('zoomIn').addClass('animated zoomOut');
 
-                            // $current = $.scrollify.current();
+                            $current = $.scrollify.current();
                             $currentSectionName = $current.data('section-name');
 
                             $('.nav').find('li.li-' + $currentSectionName).find('a').find('span').removeClass('zoomOut').addClass('zoomIn');
