@@ -65,7 +65,7 @@
             }
         });
 
-        $links = $('.nav').find('a').on('click', function (e) {
+        $links = $('nav').find('a').on('click', function (e) {
             e.preventDefault();
 
             $('.nav').find('li').find('span').addClass('animated zoomOut');
