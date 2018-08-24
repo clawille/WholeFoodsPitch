@@ -148,7 +148,6 @@ body {
   }
 
   a {
-    font-family: 'AudiTypeScreen-Bold', sans-serif;
     text-decoration: none;
     color: #ffffff;
 
@@ -257,7 +256,6 @@ body {
         & > li {
           & > a {
             color: black;
-            font-family: 'AudiType-ExtendedNormal', sans-serif;
             transition: padding 0.5s ease;
             text-shadow: none;
           }
@@ -457,7 +455,7 @@ body {
       }
       .logos {
         margin: 0 auto;
-        padding-bottom: 150px;
+        //padding-bottom: 150px;
         .logo {
           height: 150px;
           img {
@@ -658,11 +656,6 @@ body {
         }
 
         .work-card-right {
-          font-family: 'AudiTypeScreen-Light', sans-serif;
-
-          .title {
-            font-family: 'AudiTypeScreen-Bold', sans-serif;
-          }
 
           .lead {
             margin-bottom: 20px;
@@ -674,7 +667,6 @@ body {
 
           .desc-sub {
             margin-bottom: 32px;
-            font-family: 'AudiTypeScreen-Bold', sans-serif;
           }
 
           a.case {
